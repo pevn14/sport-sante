@@ -1,0 +1,32 @@
+old_name,new_name
+Quel est votre âge ?\,age
+Quel est votre genre ?,genre
+Quelle est votre situation familiale ?,situation
+Quelle est votre catégorie socio-professionnelle ?,csp
+Quel est votre niveau de diplôme le plus élevé obtenu ?,diplome
+À quelle fréquence pratiquez-vous une activité physique ou sportive ?,pratique-sportive
+Comment évalueriez vous votre état général (physique et mental) en ce moment ?,etat-percu
+"Dans votre vie quotidienne, à quel point accordez vous de l’importance à votre santé et votre bien-être physique ou mental ?",sensibilite-sante
+"Pour vous, pratiquer une activité physique ou sportive est avant tout…",perception-sport
+"De manière générale, vous diriez que votre relation avec les marques et leur communication est…",relation-marques
+"Parmi les styles de messages suivants, lequel a le plus d’impact sur vous lorsqu’il est utilisé dans une publicité ?",preferences-narative
+Il est important pour moi de me sentir intégré(e) à un groupe ou une communauté.,importance-attachement
+"Ce message me semble authentique, en accord avec les valeurs qu’il prétend défendre.",authenticite-percue
+Ce message correspond aux valeurs que je partage personnellement.,alignement-valeur
+Je me sens concerné(e) par le contenu de ce message sur le sport et la santé.,receptivite
+Ce message me touche émotionnellement.,engagement-emotionnel
+"Après avoir vu ce message, j’ai envie de commencer ou de reprendre une activité physique régulière.",intention-pratique
+Ce message me fait réfléchir sur ma propre pratique du sport ou mon mode de vie.,engagement-cognitif
+Je recommanderais ce message ou cette campagne à mon entourage.,intention-recommandation
+Ce message transmet des valeurs que je considère comme positives et éthiques,perception-ethique
+Ce message cherche avant tout à influencer sans se soucier réellement de ma santé ou de mon bien-être.,perception-manipulation
+"De manière générale, je me méfie des messages publicitaires.",mefiance-marketing
+"De manière générale, je vois trop souvent des messages sur le sport et le bien-être.",saturation-publicitaire
+Je me sens concerné(e) par le contenu de ces messages.,receptivite-h3
+Quelle vidéo vous marque le plus par la force de son message ?,resonance-emotionnelle-h3
+Quelle vidéo vous touche le plus émotionnellement ?,engagement-emotionnel-h3
+Quelle vidéo vous donne la meilleure image de vous-même ?,estime-de-soi-h3
+Quelle vidéo exprime le plus des valeurs que vous partagez ?,alignement-valeurs-h3
+Quelle vidéo vous donne le plus envie de pratiquer une activité physique ?,intention-pratique-h3
+"De manière générale, j’adhère davantage aux messages qui valorisent l’appartenance à un groupe ou une communauté.",adhesion-appartenance-h3
+"De manière générale, les messages choquants ou culpabilisants ont plus d’impact sur moi.",adhesion-choc-h3
