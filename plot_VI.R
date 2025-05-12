@@ -9,7 +9,7 @@ source("utils_descriptif.R")
 
 # TRUE = sauvegarde des plots, FALSE = affichage seulement
 SAVE <- TRUE
-DIR = "plots_VI"
+DIR = "output/plots_VI"
 
 # creation des graphs des data de type Likert
 vars_likert <- list(

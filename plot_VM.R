@@ -9,7 +9,7 @@ source("utils_descriptif.R")
 
 # TRUE = sauvegarde des plots, FALSE = affichage seulement
 SAVE <- TRUE
-DIR = "plots_VM"
+DIR = "output/plots_VM"
 
 # Charger les données nettoyées
 data <- read_csv("data_clean.csv")
@@ -27,8 +27,8 @@ walk(vars_likert, ~plot_likert(data, .$nom, label = .$label, save = SAVE, dir= D
 
 # Liste de configuration des variables catégorielles
 vars_categorielle <- list(
-  list(nom = "estime_de_soi_h3", label = "Estime de soi (Vidéo préférée)", levels = c("Aucune des deux", "La première vidéo (narration de type choc)", "La deuxième vidéo (narration de type appartenance)", "Les deux")),
-  list(nom = "engagement_emotionnel_h3", label = "Engagement émotionnel (Vidéo préféré)", levels = c("Aucune des deux", "La première vidéo (narration de type choc)", "La deuxième vidéo (narration de type appartenance)", "Les deux"))
+  list(nom = "estime_de_soi_h3", label = "Estime de soi (Vidéo préférée)", levels = c("Aucune des deux", "Narration de type choc", "Narration de type appartenance", "Les deux")),
+  list(nom = "engagement_emotionnel_h3", label = "Engagement émotionnel (Vidéo préféré)", levels = c("Aucune des deux", "Narration de type choc", "Narration de type appartenance", "Les deux"))
 )
 
 # Itération sur la liste pour générer tous les graphes

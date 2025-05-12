@@ -35,6 +35,9 @@ afficher_likert <- function(vec, nom_variable, niveaux = 1:5) {
   
   print(summary(vec))
   
+  # Affichage de la variance
+  cat("\nVariance :", round(var(vec, na.rm = TRUE), 3), "\n")
+  
   # Calcul du mode
   mode_val <- names(which.max(table(vec)))
   cat("\nMode : ", mode_val, "\n\n")

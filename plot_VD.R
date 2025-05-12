@@ -9,7 +9,7 @@ source("utils_descriptif.R")
 
 # TRUE = sauvegarde des plots, FALSE = affichage seulement
 SAVE <- TRUE
-DIR = "plots_VD"
+DIR = "output/plots_VD"
 
 # Charger les données nettoyées
 data <- read_csv("data_clean.csv")
@@ -32,9 +32,9 @@ walk(vars_likert, ~plot_likert(data, .$nom, label = .$label, save = SAVE, dir= D
 
 # Liste de configuration des variables catégorielles
 vars_categorielle <- list(
-  list(nom = "resonance_emotionnelle_h3", label = "Résonnance emotionelle (préférée)", levels = c("Aucune des deux", "La première vidéo (narration de type choc)", "La deuxième vidéo (narration de type appartenance)", "Les deux")),
-  list(nom = "alignement_valeurs_h3", label = "Alignement valeurs (préférée)", levels = c("Aucune des deux", "La première vidéo (narration de type choc)", "La deuxième vidéo (narration de type appartenance)", "Les deux")),
-  list(nom = "intention_pratique_h3", label = "Intention de pratique (préféré)", levels = c("Aucune des deux", "La première vidéo (narration de type choc)", "La deuxième vidéo (narration de type appartenance)", "Les deux"))
+  list(nom = "resonance_emotionnelle_h3", label = "Résonnance emotionelle (préférée)", levels = c("Aucune des deux", "Narration de type choc", "Narration de type appartenance", "Les deux")),
+  list(nom = "alignement_valeurs_h3", label = "Alignement valeurs (préférée)", levels = c("Aucune des deux", "Narration de type choc", "Narration de type appartenance", "Les deux")),
+  list(nom = "intention_pratique_h3", label = "Intention de pratique (préféré)", levels = c("Aucune des deux", "Narration de type choc", "Narration de type appartenance", "Les deux"))
 )
 
 # Itération sur la liste pour générer tous les graphes

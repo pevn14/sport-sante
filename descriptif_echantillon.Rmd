@@ -1,0 +1,54 @@
+---
+title: "Descriptif de l'échantillon"
+author: ''
+output:
+  word_document:
+    toc: true
+    toc_depth: '2'
+  html_document:
+    toc: true
+    toc_depth: 2
+    number_sections: true
+    code_folding: hide
+    df_print: paged
+  pdf_document:
+    toc: true
+    toc_depth: '2'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(dplyr)
+library(ggplot2)
+library(readr)
+source("utils_descriptif.R")
+data <- read_csv("data_clean.csv")
+```
+
+## 1. Caractéristiques sociodémographiques
+
+```{r}
+cat("==== Caractéristiques sociodémographiques ====
+")
+afficher_categorielle(data$age, "Age")
+afficher_categorielle(data$genre, "Genre")
+afficher_categorielle(data$situation, "Situation familiale")
+afficher_categorielle(data$csp, "Catégorie socio-professionnelle")
+afficher_categorielle(data$diplome, "Diplôme")
+```
+
+## 2. Profil sportif
+
+```{r}
+cat("\n==== Profil sportif ====\n")
+afficher_categorielle(data$pratique_sportive, "Pratique sportive")
+afficher_likert(data$etat_percu, "Etat perçu")
+```
+
+## 3. Sensibilité au bien-être et perception du sport
+
+```{r}
+cat("\n==== Sensibilité au bien-être et perception du sport ====\n")
+afficher_likert(data$sensibilite_sante, "Sensibilité santé")
+afficher_categorielle(data$perception_sport, "Perception du sport")
+```
