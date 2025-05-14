@@ -4,6 +4,7 @@
 # -------------------------------------------------------------------
 
 library(tidyverse)
+library(openxlsx)
 
 # Charger les données
 df <- read.csv("data_clean.csv")
@@ -66,7 +67,7 @@ for (pair in nominal_pairs) {
   check_results <- rbind(check_results, data.frame(
     Variable_1 = var1,
     Variable_2 = var2,
-    Effectif_total = n_total,
+    #Effectif_total = n_total,
     Min_effectif_observe = min_observe,
     Min_effectif_attendu = round(min_expected, 2),
     Test_applicable = test_suggere
@@ -74,4 +75,7 @@ for (pair in nominal_pairs) {
 }
 
 # Affichage
-print(check_results)
+#print(check_results)
+
+write.xlsx(check_results, file = "output/khi2_fisher_applicabilite.xlsx", rowNames = FALSE)
+
